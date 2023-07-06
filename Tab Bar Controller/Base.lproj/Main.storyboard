@@ -11,14 +11,33 @@
         <!--Thirt Page-->
         <scene sceneID="t9w-Gk-Z3m">
             <objects>
-                <viewController id="ge8-88-0VQ" sceneMemberID="viewController">
+                <viewController id="ge8-88-0VQ" customClass="ThirdViewController" customModule="Tab_Bar_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rSI-3o-IC2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsN-qp-iG7">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="z7J-8L-Fnk"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="jsN-qp-iG7" firstAttribute="leading" secondItem="z7J-8L-Fnk" secondAttribute="leading" id="9Hx-Pm-nBT"/>
+                            <constraint firstItem="jsN-qp-iG7" firstAttribute="top" secondItem="z7J-8L-Fnk" secondAttribute="top" id="9wL-vj-Zra"/>
+                            <constraint firstAttribute="bottom" secondItem="jsN-qp-iG7" secondAttribute="bottom" id="vfr-xr-C9t"/>
+                            <constraint firstItem="jsN-qp-iG7" firstAttribute="trailing" secondItem="z7J-8L-Fnk" secondAttribute="trailing" id="yJH-ol-G3j"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Thirt Page" image="3.lane" catalog="system" id="eD9-Y3-goX"/>
+                    <connections>
+                        <outlet property="webView" destination="jsN-qp-iG7" id="cgN-II-del"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lkn-tG-mqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,30 +46,81 @@
         <!--Profil-->
         <scene sceneID="0TO-At-lVJ">
             <objects>
-                <viewController id="HYr-Ed-JcL" sceneMemberID="viewController">
+                <viewController id="HYr-Ed-JcL" customClass="SecondViewController" customModule="Tab_Bar_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xnx-FO-dxx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0za-UR-BPv">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="eFo-Cp-Zee"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0za-UR-BPv" firstAttribute="trailing" secondItem="eFo-Cp-Zee" secondAttribute="trailing" id="gQb-dn-qxz"/>
+                            <constraint firstItem="0za-UR-BPv" firstAttribute="leading" secondItem="eFo-Cp-Zee" secondAttribute="leading" id="gkM-VH-Vrc"/>
+                            <constraint firstItem="0za-UR-BPv" firstAttribute="top" secondItem="eFo-Cp-Zee" secondAttribute="top" id="i4g-d2-Y17"/>
+                            <constraint firstAttribute="bottom" secondItem="0za-UR-BPv" secondAttribute="bottom" id="pFh-Pd-qY4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profil" image="person.crop.circle.fill" catalog="system" id="teN-no-mQ4"/>
+                    <connections>
+                        <outlet property="webView" destination="0za-UR-BPv" id="2m5-Gd-iEV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Av8-Of-EFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-53"/>
+            <point key="canvasLocation" x="651" y="42"/>
         </scene>
-        <!--Ana Sayfa-->
+        <!--Main Page-->
         <scene sceneID="kYH-LV-YIR">
             <objects>
-                <viewController id="uqe-U7-yF9" sceneMemberID="viewController">
+                <viewController id="uqe-U7-yF9" customClass="FirstViewController" customModule="Tab_Bar_Controller" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4hC-Xe-EQ4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-z3-Wy9">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Pic-ki-uSe">
+                                <rect key="frame" x="0.0" y="720" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="teM-nT-oRe"/>
+                                    <tabBarItem title="Hakkinda" image="info" catalog="system" id="5ZI-5r-jux">
+                                        <color key="badgeColor" systemColor="systemRedColor"/>
+                                    </tabBarItem>
+                                    <tabBarItem systemItem="more" id="5nk-nh-bTz"/>
+                                </items>
+                                <color key="barTintColor" systemColor="systemTealColor"/>
+                                <color key="selectedImageTintColor" systemColor="labelColor"/>
+                            </tabBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="G4B-Rz-2EQ"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.73053169929999995" green="0.87783145480000002" blue="0.55034356279999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="SI2-z3-Wy9" firstAttribute="top" secondItem="G4B-Rz-2EQ" secondAttribute="top" id="BF0-xM-eS5"/>
+                            <constraint firstItem="G4B-Rz-2EQ" firstAttribute="bottom" secondItem="SI2-z3-Wy9" secondAttribute="bottom" id="Zdu-yX-aqN"/>
+                            <constraint firstItem="G4B-Rz-2EQ" firstAttribute="trailing" secondItem="SI2-z3-Wy9" secondAttribute="trailing" id="caM-iu-W7j"/>
+                            <constraint firstItem="SI2-z3-Wy9" firstAttribute="leading" secondItem="G4B-Rz-2EQ" secondAttribute="leading" id="vOa-bR-L7Y"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ana Sayfa" image="flag" catalog="system" id="AGZ-bd-S9B"/>
+                    <tabBarItem key="tabBarItem" title="Main Page" image="rectangle.3.group.fill" catalog="system" id="AGZ-bd-S9B"/>
+                    <connections>
+                        <outlet property="webView" destination="SI2-z3-Wy9" id="RVT-Xs-ucB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRM-oH-j2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +133,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yIW-w0-R7h">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="uqe-U7-yF9" kind="relationship" relationship="viewControllers" id="vmB-Wm-OqY"/>
@@ -78,13 +149,23 @@
     </scenes>
     <resources>
         <image name="3.lane" catalog="system" width="128" height="97"/>
-        <image name="flag" catalog="system" width="128" height="121"/>
+        <image name="info" catalog="system" width="93" height="128"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="rectangle.3.group.fill" catalog="system" width="128" height="81"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
